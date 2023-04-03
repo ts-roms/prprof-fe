@@ -40,6 +40,7 @@ const Calculator: React.FC<CalculatorProps> = () => {
 
   const handleButtonPress = (e: React.MouseEvent<HTMLButtonElement>) => {
     const btnValue = e.currentTarget.value;
+    console.log('value', btnValue);
     switch (btnValue) {
       case '=':
         try {
@@ -62,7 +63,7 @@ const Calculator: React.FC<CalculatorProps> = () => {
         setResult('');
         break;
       default:
-        setValue((prevInput) => prevInput + btnValue);
+        setValue((prevInput) =>  prevInput + btnValue);
     }
   }
 

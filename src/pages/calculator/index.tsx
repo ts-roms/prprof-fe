@@ -178,11 +178,6 @@ const Calculator: React.FC<CalculatorProps> = () => {
           </button>
         </div>
       </div>
-      <div className="items-center flex">
-        <button className="w-full bg-[#be731d] hover:bg-[#5B5E67]" onClick={handleBackspace}>
-          <img src={backspaceSrc} alt={'backspace'}  className=" m-auto  h-[95px] invert"/>
-        </button>
-      </div>
     </>)
   }
 
